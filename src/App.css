@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* File: font.css */
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+
+@font-face {
+  font-family: "SatoshiBlack";
+  src: local("SatoshiBlack"), url("./assets/fonts/Satoshi-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "SatoshiMedium";
+  src: local("SatoshiMedium"), url("./assets/fonts/Satoshi-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TerminaDemi";
+  src: local("TerminaDemi"), url("./assets/fonts/TerminaDemi.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TerminaMedium";
+  src: local("TerminaMedium"), url("./assets/fonts/TerminaMedium.otf") format("opentype");
+}
+
+* {
+  font-family: "SatoshiMedium",sans-serif!important;
+  outline: none;
+}
+body {
+  background: linear-gradient(135deg, #083432, #03AE5A, #00CF77, #FFF15F, #F6911D);
+  color: white;
+}
+
+h1 {
+  font-family: "SatoshiBlack", sans-serif;
+  
+  /* letter-spacing: -10pt; */
+  text-transform: uppercase;
+  @apply text-3xl  md:text-6xl font-semibold
+}
+
+h2 {
+  font-family: "TerminaDemi", sans-serif;
+   
+  text-transform: uppercase;
+  @apply text-xl md:text-3xl leading-relaxed
+}
+
+h3 {
+  font-family: "TerminaMedium", sans-serif;
+  font-size: 26pt;
+  line-height: 31.2pt;
+  text-transform: none;
+}
+
+p {
+  font-family: "SatoshiMedium", sans-serif;
+  @apply text-sm md:text-2xl leading-relaxed font-normal
+}
+
+
+a {
+  text-decoration: none;
+  color:white
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.text {
+  margin-right: 10px; /* Adjust the spacing between text and icon as needed */
+}
+
+.linkedin-icon {
+  height: 30px;
+}
